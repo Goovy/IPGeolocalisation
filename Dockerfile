@@ -14,6 +14,8 @@ RUN curl -L http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.g
 RUN curl -L http://geolite.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz -o /usr/local/share/GeoIP/GeoIP.dat.gz \
 && gunzip /usr/local/share/GeoIP/GeoIP.dat.gz
 
+RUN ln -s /usr/local/share/GeoIP/city.php /city.php
+
 ADD scripts/ /usr/local/share/GeoIP/
 
 CMD ["/bin/sh"]
