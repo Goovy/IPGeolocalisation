@@ -1,7 +1,7 @@
 # IPGeolocalisation
 IP Geolocalisation par Shell
 
-To use it, build it and run it:
+Pour l'utiliser, tapez simplement les 2 commandes suivantes
 ```
 $ docker build -t goovy/shelloc .
 $ docker run -it --rm goovy/shelloc php city.php 24.24.24.24
